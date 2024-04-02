@@ -1,0 +1,158 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(13, 19, 35);
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  min-height: 100vh;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 75%;
+  display: grid;
+  margin: 5rem auto;
+  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+#intro-card {
+  grid-row: 1 / span 2;
+  border-radius: 0.75rem;
+  background-color: hsl(235, 46%, 20%);
+}
+
+#intro-section {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  height: 60%;
+}
+
+#profile-img {
+  width: 6rem;
+  height: 6rem;
+  border: 4px solid white;
+  border-radius: 100%;
+}
+
+#person-data {
+  margin-top: 2.5rem;
+}
+
+#person-subText {
+  color: hsl(236, 100%, 87%);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+#person-name {
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.375;
+}
+
+#btn-group {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: max-content;
+  margin-bottom: 1rem;
+  color: hsl(236, 100%, 87%);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn:focus, .active-btn {
+  color: white;
+}
+
+.activity {
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#activity-work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+#activity-play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+#activity-study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+#activity-exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+#activity-social {
+  background-color: hsl(264, 64%, 52%);
+}
+
+#activity-self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.activity-details {
+  border-radius: 0.75rem;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  margin-top: 3rem;
+  height: max-content;
+  z-index: 50;
+}
+
+.activity-name {
+  grid-column: 1 / span 2;
+  font-weight: 500;
+}
+
+.three-dots {
+  text-align: right;
+  color: hsl(236, 100%, 87%);
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding-right: 0.75rem;
+}
+
+.presentTime {
+  grid-column: 1 / span 3;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+.previousTime {
+  font-size: 0.9rem;
+  grid-column: 1 / span 3;
+  color: hsl(236, 100%, 87%);
+  padding-bottom: 0.5rem;
+}
+
+.activity-img {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.75rem;
+  margin-right: 0.5rem;
+}
